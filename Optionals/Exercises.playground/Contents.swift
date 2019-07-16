@@ -9,9 +9,20 @@ import UIKit
 var moviesDict:Dictionary = [ "Star Wars":"George Lucas", "Point Break":"Kathryn Bigelow"]
 var movie = "Point Break"
 var director = moviesDict[movie]
-
+if let director = director {
+    print(director)
+}
 //: 1b) Test your code by inserting different values for the variable `movie`.
-
+movie = "Star Wars"
+director = moviesDict[movie]
+if let director = director {
+    print(director)
+}
+movie = "Fakeout"
+director = moviesDict[movie]
+if let director = director {
+    print(director)
+}
 //: ### Exercise 2
 //: The LoginViewController class below needs a UITextField to hold a user's name. Declare a variable for this text field as a property of the class LoginViewController. Keep in mind that the textfield property will not be initialized until after the view controller is constructed.
 class LoginViewController: UIViewController {
